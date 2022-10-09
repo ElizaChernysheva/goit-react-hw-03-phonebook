@@ -40,7 +40,6 @@ class App extends Component {
   }
 
   removeContact = (id) =>{
-    const {contacts} = this.state;
     this.setState(({contacts})=>({
       contacts:contacts.filter(contact => contact.id !== id)
     }))
