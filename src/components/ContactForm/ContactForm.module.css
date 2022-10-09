@@ -10,8 +10,14 @@
 
 .form__input{
   display: block;
+  margin-top: 10px;
 }
 
 .form__btn{
   margin-top: 10px;
+}
+
+.form__label:not(:first-child){
+  display: block;
+  margin-top: 15px;
 }
