@@ -63,7 +63,7 @@ class App extends Component {
         <h1>Phonebook</h1>
         <ContactForm onSubmitForm={this.handleOnSubmit}/>
         <h2>Contacts</h2>
-        <Filter onFilterChange={this.handleOnFilterChange}/>
+        <Filter onFilterChange={this.handleOnFilterChange} filter={this.state.filter}/>
         <ContactList contacts={this.state.contacts} filter={this.state.filter} removeItem={this.removeContact}/>
       </div>
     );
